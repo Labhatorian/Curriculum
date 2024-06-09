@@ -20,5 +20,12 @@ body {
   color: var(--base-color);
   height: 100%;
   width: 100%;
-  overflow: hidden;
+  overflow: auto;
+}
+
+#leerrouteWorkspace {
+  display: block;
+  height: 500px;
+  margin-left: 50px;
+  margin-right: 50px;
 }

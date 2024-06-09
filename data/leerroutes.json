@@ -1,0 +1,224 @@
+[
+    {
+        "id": "P",
+        "group": "propedeuse",
+        "groupPosition": "propedeuse",
+        "children": [
+            "HCI",
+            "BPM",
+            "OOSDD",
+            "MC"
+        ],
+        "constraints": [],
+        "data": {
+            "link": "https://keuzewijzerhboict.nl"
+        }
+    },
+    {
+        "id": "HCI",
+        "group": "group",
+        "groupPosition": "secondRang",
+        "children": [
+            "CAA",
+            "DS"
+        ],
+        "constraints": [],
+        "data": {
+            "link": "https://keuzewijzerhboict.nl"
+        }
+    },
+    {
+        "id": "BPM",
+        "group": "group",
+        "groupPosition": "secondRang",
+        "children": [
+            "CAA",
+            "DS",
+            "UI"
+        ],
+        "constraints": [],
+        "data": {
+            "link": "https://keuzewijzerhboict.nl"
+        }
+    },
+    {
+        "id": "OOSDD",
+        "group": "group",
+        "groupPosition": "secondRang",
+        "children": [
+            "DS",
+            "UI",
+            "WD"
+        ],
+        "constraints": [],
+        "data": {
+            "link": "https://keuzewijzerhboict.nl"
+        }
+    },
+    {
+        "id": "MC",
+        "group": "group",
+        "groupPosition": "secondRang",
+        "children": [
+            "IOT"
+        ],
+        "constraints": [],
+        "data": {
+            "link": "https://keuzewijzerhboict.nl"
+        }
+    },
+    {
+        "id": "CAA",
+        "group": "group",
+        "groupPosition": "thirdRang",
+        "children": [
+            "AIS",
+            "MIT",
+            "DO"
+        ],
+        "constraints": [],
+        "data": {
+            "link": "https://keuzewijzerhboict.nl"
+        }
+    },
+    {
+        "id": "DS",
+        "group": "group",
+        "groupPosition": "thirdRang",
+        "children": [
+            "AIS",
+            "MIT",
+            "ML",
+            "QSD"
+        ],
+        "constraints": [],
+        "data": {
+            "link": "https://keuzewijzerhboict.nl"
+        }
+    },
+    {
+        "id": "UI",
+        "group": "group",
+        "groupPosition": "thirdRang",
+        "children": [
+            "MIT",
+            "UXD"
+        ],
+        "constraints": [],
+        "data": {
+            "link": "https://keuzewijzerhboict.nl"
+        }
+    },
+    {
+        "id": "WD",
+        "group": "group",
+        "groupPosition": "thirdRang",
+        "children": [
+            "DO",
+            "QSD"
+        ],
+        "constraints": [],
+        "data": {
+            "link": "https://keuzewijzerhboict.nl"
+        }
+    },
+    {
+        "id": "IOT",
+        "group": "group",
+        "groupPosition": "thirdRang",
+        "children": [
+            "QSD",
+            "CE"
+        ],
+        "constraints": [],
+        "data": {
+            "link": "https://keuzewijzerhboict.nl"
+        }
+    },
+    {
+        "id": "AIS",
+        "group": "ais",
+        "groupPosition": "fourthRang",
+        "children": [],
+        "constraints": [
+            "OOSDD",
+            {
+                "from": "CAA",
+                "to": "BPM"
+            }
+        ],
+        "data": {
+            "link": "https://keuzewijzerhboict.nl"
+        }
+    },
+    {
+        "id": "MIT",
+        "group": "mt",
+        "groupPosition": "fourthRang",
+        "children": [],
+        "constraints": [
+            "OOSDD",
+            "HCI"
+        ],
+        "data": {
+            "link": "https://keuzewijzerhboict.nl"
+        }
+    },
+    {
+        "id": "ML",
+        "group": "ml",
+        "groupPosition": "fourthRang",
+        "children": [],
+        "constraints": [
+            "HCI"
+        ],
+        "data": {
+            "link": "https://keuzewijzerhboict.nl"
+        }
+    },
+    {
+        "id": "UXD",
+        "group": "uxd",
+        "groupPosition": "fourthRang",
+        "children": [],
+        "constraints": [],
+        "data": {
+            "link": "https://keuzewijzerhboict.nl"
+        }
+    },
+    {
+        "id": "DO",
+        "group": "do",
+        "groupPosition": "fourthRang",
+        "children": [],
+        "constraints": [
+            "BPM"
+        ],
+        "data": {
+            "link": "https://keuzewijzerhboict.nl"
+        }
+    },
+    {
+        "id": "QSD",
+        "group": "qsd",
+        "groupPosition": "fourthRang",
+        "children": [],
+        "constraints": [
+            "BPM",
+            "HCI"
+        ],
+        "data": {
+            "link": "https://keuzewijzerhboict.nl"
+        }
+    },
+    {
+        "id": "CE",
+        "group": "ce",
+        "groupPosition": "fourthRang",
+        "children": [],
+        "constraints": [],
+        "data": {
+            "link": "https://keuzewijzerhboict.nl"
+        }
+    }
+]

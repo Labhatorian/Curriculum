@@ -4,6 +4,7 @@ import gebruikersinteractieCurriculum from "../data/architectuurlaag/gebruikersi
 import infrastructureCurriculum from "../data/architectuurlaag/infrastructuur/curriculum.js";
 import hardwareInterfacingCurriculum from "../data/architectuurlaag/hardwareInterfacing/curriculum.js";
 import CardComponent from "./card-component.js";
+
 const template = document.createElement("template");
 template.innerHTML = `
     <link rel="stylesheet" href="/css/desktop-navbar.css">
@@ -16,7 +17,6 @@ template.innerHTML = `
             <option value="organisatieprocessen">Organisatie proccessen</option>
             <option value="hardwareinterfacing">Hardware Interfacing</option>
             <option value="gebruikersinteractie">Gebruikersinteractie</option>
-            
         </select>
         </div>
         <ul class="tabs" id="tabs"></ul>

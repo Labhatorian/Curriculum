@@ -1,13 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="/components/curriculum-component.js" type="module"></script>
-    <link rel="stylesheet" href="/css/style.css" />
-    <title>Curriculum Navbar</title>
-  </head>
-  <body>
-    <curriculum-component></curriculum-component>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="/components/curriculum-component.js" type="module"></script>
+  <link rel="stylesheet" href="/css/style.css" />
+  <title>Curriculum Navbar</title>
+
+  <!-- Include the JavaScript file provided by Leerroutes package -->
+  <script src="/components/leerroutes.js"></script>
+  <script>
+    (async () => {
+      try {
+        const response = await fetch('/data/leerroutes.json');
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        const leerrouteItems = await response.json();
+
+        const leerrouteWorkspace = document.querySelector('#leerrouteWorkspace');
+        leerrouteWorkspace.setLeerrouteItems(leerrouteItems);
+      } catch (error) {
+        console.error('Failed to load leerroute items:', error);
+      }
+    })();
+  </script>
+</head>
+
+<body>
+  <curriculum-component></curriculum-component>
+  <leerroute-workspace id="leerrouteWorkspace"></leerroute-workspace>
+</body>
+
 </html>
